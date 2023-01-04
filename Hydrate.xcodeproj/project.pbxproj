@@ -15,6 +15,10 @@
 		FA3E181F26F65ED3001589C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3E181D26F65ED3001589C8 /* LaunchScreen.storyboard */; };
 		FA3E182A26F65ED3001589C8 /* HydrateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E182926F65ED3001589C8 /* HydrateTests.swift */; };
 		FA3E183526F65ED3001589C8 /* HydrateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E183426F65ED3001589C8 /* HydrateUITests.swift */; };
+		FA3E184326F65F7D001589C8 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E184226F65F7D001589C8 /* OtherViewController.swift */; };
+		FA3E184626F66D7D001589C8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E184526F66D7D001589C8 /* Utilities.swift */; };
+		FA3E184826F704A3001589C8 /* KidsOnTheMoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3E184726F704A3001589C8 /* KidsOnTheMoon.ttf */; };
+		FA3E184C26F71E36001589C8 /* waterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E184B26F71E36001589C8 /* waterData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		FA3E183026F65ED3001589C8 /* HydrateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydrateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3E183426F65ED3001589C8 /* HydrateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrateUITests.swift; sourceTree = "<group>"; };
 		FA3E183626F65ED3001589C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3E184226F65F7D001589C8 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		FA3E184526F66D7D001589C8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FA3E184726F704A3001589C8 /* KidsOnTheMoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KidsOnTheMoon.ttf; sourceTree = "<group>"; };
+		FA3E184B26F71E36001589C8 /* waterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waterData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,16 @@
 		FA3E181126F65ED2001589C8 /* Hydrate */ = {
 			isa = PBXGroup;
 			children = (
+				FA3E184426F66D7D001589C8 /* Helpers */,
 				FA3E181226F65ED2001589C8 /* AppDelegate.swift */,
 				FA3E181426F65ED2001589C8 /* SceneDelegate.swift */,
-				FA3E181626F65ED2001589C8 /* ViewController.swift */,
 				FA3E181826F65ED2001589C8 /* Main.storyboard */,
 				FA3E181B26F65ED3001589C8 /* Assets.xcassets */,
 				FA3E181D26F65ED3001589C8 /* LaunchScreen.storyboard */,
 				FA3E182026F65ED3001589C8 /* Info.plist */,
+				FA3E181626F65ED2001589C8 /* ViewController.swift */,
+				FA3E184226F65F7D001589C8 /* OtherViewController.swift */,
+				FA3E184B26F71E36001589C8 /* waterData.swift */,
 			);
 			path = Hydrate;
 			sourceTree = "<group>";
@@ -126,6 +137,15 @@
 				FA3E183626F65ED3001589C8 /* Info.plist */,
 			);
 			path = HydrateUITests;
+			sourceTree = "<group>";
+		};
+		FA3E184426F66D7D001589C8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA3E184726F704A3001589C8 /* KidsOnTheMoon.ttf */,
+				FA3E184526F66D7D001589C8 /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +254,7 @@
 				FA3E181F26F65ED3001589C8 /* LaunchScreen.storyboard in Resources */,
 				FA3E181C26F65ED3001589C8 /* Assets.xcassets in Resources */,
 				FA3E181A26F65ED2001589C8 /* Main.storyboard in Resources */,
+				FA3E184826F704A3001589C8 /* KidsOnTheMoon.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3E181726F65ED2001589C8 /* ViewController.swift in Sources */,
+				FA3E184326F65F7D001589C8 /* OtherViewController.swift in Sources */,
 				FA3E181326F65ED2001589C8 /* AppDelegate.swift in Sources */,
+				FA3E184C26F71E36001589C8 /* waterData.swift in Sources */,
+				FA3E184626F66D7D001589C8 /* Utilities.swift in Sources */,
 				FA3E181526F65ED2001589C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YV26NS784Z;
 				INFOPLIST_FILE = Hydrate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YV26NS784Z;
 				INFOPLIST_FILE = Hydrate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
